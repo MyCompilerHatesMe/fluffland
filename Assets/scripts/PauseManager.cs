@@ -20,11 +20,6 @@ public class PauseManager : MonoBehaviour
     {
         if (!isPaused) PauseGame();
     }
-
-    void Update()
-    {
-
-    }
     void PauseGame()
     {
         pauseMenu.SetActive(true);
@@ -39,6 +34,6 @@ public class PauseManager : MonoBehaviour
     }
     public void ExitGame()
     {
-        Application.Quit();
+        SceneLoader.Load("MAINMENUNEW", useBlackFade: false);
     }
 }

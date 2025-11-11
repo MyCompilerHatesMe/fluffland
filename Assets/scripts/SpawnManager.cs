@@ -31,10 +31,8 @@ public class SpawnManager : MonoBehaviour
             return; 
         }
         else
-        {
             Instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
+            // DontDestroyOnLoad(this.gameObject); THIS BREAKS IT. DON'T ENABLE. BAD.
 
         isSetupValid = true; // Assume true until a check fails
 
